@@ -1,0 +1,127 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+}
+html,body,p,input,button,textarea,a{
+    font-family: "Microsoft YaHei", Arial;
+    font-size: 14px;
+    color: #666;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,strong{
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+.clearFix:before,
+.clearFix:after{
+    content: "";
+    display: block;
+    zoom: 1;
+    clear: both;
+}
+.warp{
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: #2b2b2b;
+}
+.header-body{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+}
+.logo{
+    width: 231px;
+    height: 42px;
+    float: left;
+    margin-top: 39px;
+}
+.menu{
+    float: right;
+    margin-top: 40px;
+}
+.menu > li{
+    width: 110px;
+    height: 40px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size: 0;
+    margin-right: 15px;
+}
+.menu > li > a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.menu > li.active > a{
+    background-color: #fff;
+    border-radius: 5px;
+    color: #2b2b2b;
+}
+.banner{
+    width: 100%;
+    height: 800px;
+    background: url("../image/banner/banner.jpg") no-repeat center;
+}
+
+
+.footer{
+    width: 100%;
+    height: 327px;
+    background-color: #2b2b2b;
+}
+.footer-body{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 78px;
+    text-align: center;
+}
+.footer-tit{
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.footer-list{
+    display: inline-block;
+    font-size: 0;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #666;
+}
+.footer-list > li{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.footer-list > li + li{
+    margin-left: 22px;
+}
+.footer-list > li > a{
+    color: #999;
+}
+.copyright{
+    margin-top: 52px;
+    color: #dcdcdc;
+}
