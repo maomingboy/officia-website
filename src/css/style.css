@@ -4,6 +4,7 @@ html,body{
 }
 body{
     background-color: #fff;
+    min-width: 1180px;
 }
 html,body,p,input,button,textarea,a{
     font-family: "Microsoft YaHei", Arial;
@@ -82,6 +83,168 @@ a{
     width: 100%;
     /*height: 800px;*/
     /*background: url("../image/banner/banner1.jpg") no-repeat center;*/
+}
+
+
+.main{
+	width: 100%;
+	overflow: hidden;
+}
+.main h1,.main h2,.main p{text-align: center;}
+.InternetTravelFinance,.LeaderVersion,.TouristVersion{
+	width:1180px;
+	box-sizing: border-box;
+	margin:auto;
+	padding-top: 110px;
+}
+.InternetTravelFinance{height: 555px;}
+.InternetTravelFinance h1,.InternetTravelFinance h1+p,.LeaderVersion h1,.LeaderVersion h1+p,.TouristVersion h1,.TouristVersion h1+p{
+	-webkit-transition:all .5s;
+	-webkit-transform: translateX(1100px);
+}
+.InternetTravelFinance h1,.LeaderVersion h1,.TouristVersion h1{color: #262626;}
+.InternetTravelFinance p,.LeaderVersion p,.TouristVersion p{margin-top:24px;margin-bottom:100px;}
+.InternetTravelFinance .imggroup{
+	height: 130px;
+	-webkit-transition:all .5s;
+	-webkit-transform: translateX(200px);
+}
+.InternetTravelFinance img{
+	width:70px;
+	height:70px;
+	margin-left: 175px;
+}
+.InternetTravelFinance .center{
+	margin-left:304px;
+	margin-right: 134px;
+}
+.contentAll{
+	-webkit-transition:all .5s;
+	-webkit-transform: translateX(1100px);
+}
+.contentAll .content{
+	width: 340px;
+	display: inline-block;
+	margin-left: 38px;
+	vertical-align: top;
+}
+.contentAll .content h2{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #262626;
+}
+.GreatOriginality,.TailorMade{
+	width: 100%;
+	height: 305px;
+	background: url(../image/bj_1.jpg) no-repeat;
+	background-position: center;
+	padding-top:150px;
+	box-sizing: border-box;
+}
+.GreatOriginality h1,.TailorMade h1{
+	font-size:32px;
+	color: white;
+	margin-bottom:27px;
+	-webkit-transition:all .5s;
+	-webkit-transform: translateX(1100px);
+}
+.GreatOriginality p,.TailorMade p{
+	font-size:16px;
+    color: rgb(169, 169, 169);
+    -webkit-transition:all .5s;
+	-webkit-transform: translateX(1100px);
+}
+.LeaderVersion,.TouristVersion{height: 800px;}
+.LeaderVersion .subttl,.TouristVersion .subttl{margin-bottom:50px}
+.LeaderVersion div,.TouristVersion div{
+	display: inline-block;
+	vertical-align: top;
+	width: 510px;
+	-webkit-transition:all .8s;
+	-webkit-transform: rotate(-90deg);
+	transform-origin: left bottom;
+}
+.phone{margin-left:70px;}
+.phone img{width:85%;float:right}
+.LeaderVersion .text{
+	padding: 0px 63px;
+    box-sizing: border-box;
+}
+.LeaderVersion .text span,.TouristVersion .text span{font-size: 16px;color: rgb(51, 51, 51)}
+.LeaderVersion .text p,.TouristVersion .text p{
+	text-align: left;
+	line-height: 25px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    color: rgb(62, 62, 62)
+}
+.LeaderVersion .text .qian,.TouristVersion .text .qian{color: rgb(153, 153, 153)}
+.TouristVersion .text{
+	padding: 0px 90px;
+    box-sizing: border-box;
+}
+.AboutUs{
+    width: 100%;
+	height: 565px;
+	background: url(../image/bj_2.jpg) no-repeat;
+	background-position: center;
+	padding-top:120px;
+	box-sizing: border-box;
+}
+.AboutUs .about{
+	width:1180px;
+	margin:auto;
+}
+.about div{
+	display: inline-block;
+    vertical-align: top;
+}
+.word{
+	width: 567px;
+	font-family: "微软雅黑";
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 40px;
+	-webkit-transition:all .8s;
+	-webkit-transform: translateX(1200px);
+}
+.word h4{
+	color:white;
+    margin-bottom: 75px;
+}
+.word h4 span{
+    font-size: 14px;
+    color: rgb(178, 178, 178);
+}
+.word p,.word a{
+	color: rgb(169, 169, 169);
+	text-align: left;
+	margin-bottom:40px;
+}
+.MV{
+	width:480px;
+	height: 380px;
+	background: lightseagreen;
+	transform-origin: left bottom;
+    margin-left: 120px;
+    margin-top: 60px;
+	-webkit-transition:all .8s;
+	-webkit-transform: rotate(-90deg);				
+}
+.QR{
+	width: 100%;
+	height:306px;
+	overflow: hidden;
+}
+.QR_code{
+	height: 218px;
+	width: 1180px;
+	background: url(../image/qrcode.jpg) no-repeat;
+	background-position: -435px;
+	margin:88px auto 0;
+	-webkit-transition:all .6s;
+	-webkit-transform: rotate(-90deg);
+	transform-origin: left bottom;
 }
 
 
