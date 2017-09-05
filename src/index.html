@@ -20,7 +20,10 @@
             <img class="logo" src="image/icon/logo.png">
             <ul class="menu">
                 <li class="active"><a href="javascript:;">首 页</a></li>
-                <li><a href="javascript:;">首 页</a></li>
+                <li><a href="javascript:;">云游旅行</a></li>
+                <li><a href="javascript:;">云游商城</a></li>
+                <li><a href="javascript:;">云游支付</a></li>
+                <li><a href="javascript:;">关于云游</a></li>
             </ul>
         </div>
     </div>
@@ -111,12 +114,70 @@
 					<p>云游智行（北京）科技有限公司是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。</p>
 					<a href="#">MORE>></a>
 				</div>
-				<div class="MV"></div>
+				<div class="MV">
+                    <div class="video">
+                        <video id="video" src="media/yunu.mp4" controls="controls" muted></video>
+                        <div class="btn">
+                            <img src="image/icon/play.png" id="play">
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
+
    		<div class="QR">
 	   		<div class="QR_code"></div>
    		</div>
+        <div class="time-axis ">
+            <ul class="time-axis-tops clearFix">
+                <li><div class="time-axis-year">2015</div></li>
+                <li class="time-axis-tops2"><div class="time-axis-year">2016</div></li>
+                <li class="time-axis-tops3"><div class="time-axis-year">2017</div></li>
+            </ul>
+            <ul class="time-axis-top clearFix">
+                <li class="active"><div class="time-axis-date timeAxisDate">7月</div></li>
+                <li><div class="time-axis-date timeAxisDate">10月</div></li>
+                <li><div class="time-axis-date timeAxisDate">4月</div></li>
+                <li><div class="time-axis-date timeAxisDate">6月</div></li>
+                <li><div class="time-axis-date timeAxisDate">11月</div></li>
+                <li><div class="time-axis-date timeAxisDate">12月</div></li>
+                <li><div class="time-axis-date timeAxisDate">2月</div></li>
+                <li><div class="time-axis-date timeAxisDate">3月</div></li>
+                <li><div class="time-axis-date timeAxisDate">7月</div></li>
+            </ul>
+            <div class="time-axis-body">
+                <ul class="time-axis-bodys timeAxisBody">
+                    <li class="active">
+                        <div class="time-axis-word">云游智行（北京）科技有限公司前身沈阳云游网络科技有限公司在沈阳成立</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">公司自主研发的《电子合同签署管理系统》上线</div>
+                        <div class="time-axis-word">公司自主研发的《云游网络在线支付系统》上线</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">与辽宁省工商银行签署战略合作协议，成为工行入围企业</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">与辽宁省银联签署合作协议，开展跨境、境外在线支付业务</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">在北京成立总公司云游智行（北京）科技有限公司</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">公司自主研发的《云游e境外旅游综合信息服务系统》1.0版本上线</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">云游e境外旅游综合信息服务系统》升级为2.0版本</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">冠名并应邀参加云游·2017年欧洲旅游业联合总会年会</div>
+                    </li>
+                    <li>
+                        <div class="time-axis-word">云游e境外旅游综合信息服务系统》升级为3.0版本</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     
     
@@ -136,12 +197,23 @@
 </div>
 </body>
 </html>
-<!--<script>-->
-    <!--$(function(){-->
-        <!--var left=$(".btn").screenX;-->
-        <!--var top=$(".btn").screenY;-->
-        <!--alert("top："+top+"***** left："+left);-->
-        <!--$(".btn").click(function(event){-->
-        <!--});-->
-    <!--})-->
-<!--</script>-->
+
+<script>
+    $(function(){
+        $(".menu > li").click(function(){
+            $(".menu > li").removeClass("active");
+            $(this).addClass("active");
+        });
+        $("#play").click(function(){
+            $(this).parent().fadeOut(600);
+            $("#video").trigger("play");
+        });
+        $(".timeAxisDate").click(function(){
+            var num=$(this).parents("li").index();
+            $(".timeAxisDate").parents("li").removeClass("active");
+            $(this).parents("li").addClass("active");
+            $(".timeAxisBody li").hide();
+            $(".timeAxisBody li:eq("+num+")").fadeIn(800);
+        });
+    })
+</script>

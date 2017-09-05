@@ -224,7 +224,7 @@ a{
 .MV{
 	width:480px;
 	height: 380px;
-	background: lightseagreen;
+	/*background: lightseagreen;*/
 	transform-origin: left bottom;
     margin-left: 120px;
     margin-top: 60px;
@@ -249,6 +249,7 @@ a{
 
 
 .footer{
+    clear: both;
     width: 100%;
     height: 327px;
     background-color: #2b2b2b;
@@ -287,4 +288,126 @@ a{
 .copyright{
     margin-top: 52px;
     color: #dcdcdc;
+}
+
+/*视频*/
+
+.video{
+    position: relative;
+    width: 480px;
+    height: 380px;
+    background: url("../image/video_bg.png") no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+.video > video{
+    width: 442px;
+    margin-top: 17px;
+    margin-left: 19px;
+}
+.btn{
+    position: absolute;
+    left: 19px;
+    top: 17px;
+    width: 442px;
+    height: 265px;
+    background: url("../image/video_h.jpg") no-repeat;
+    background-size: 100%;
+    z-index: 10;
+}
+.btn > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    cursor: pointer;
+}
+/*时间轴*/
+
+.clearFix:before,.clearFix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.time-axis{
+    position: relative;
+    padding-top: 20px;
+    min-width: 900px;
+    max-width: 1180px;
+    margin: 0 auto 120px;
+}
+.time-axis-top{
+    height: 40px;
+}
+.time-axis-top > li:first-child{
+    margin-left: 5%;
+}
+.time-axis-top > li{
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+.time-axis-date{
+    display: inline-block;
+    zoom: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    border: 3px solid #80c8fa;
+    cursor: pointer;
+    font-size: 10px;
+    color: #999;
+    background-color: #fff;
+}
+.time-axis-top > li.active .time-axis-date{
+    color: #fff;
+    background-color: #80c8fa;
+}
+.time-axis-tops{
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+    background: url("../image/icon/line.png") repeat-x  center left;
+
+}
+.time-axis-tops > li{
+    float: left;
+    width: 8%;
+    text-align: center;
+    color: #999;
+    position: relative;
+    top: -16px;
+}
+.time-axis-tops2{
+    margin-left: 13%;
+}
+.time-axis-tops3{
+    margin-left: 32%;
+}
+.time-axis-year{
+    display: inline;
+    padding: 0 5px;
+    background-color: #fff;
+}
+.time-axis-body{
+    clear: both;
+    margin-top: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+.time-axis-bodys > li{
+    display: none;
+    font-size: 18px;
+    color: #666;
+}
+.time-axis-bodys > li.active{
+    display: block;
 }
