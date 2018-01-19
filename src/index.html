@@ -1,219 +1,273 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="云游智行" />
-    <meta name="keywords" content="云游智行" />
     <title>云游智行</title>
-    <link rel="shortcut icon" href="image/icon/favicon.ico" type="image/x-icon"  sizes="10x10">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/index.js" ></script>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-<div class="warp">
-    <div class="header">
-        <div class="header-body">
-            <img class="logo" src="image/icon/logo.png">
-            <ul class="menu">
-                <li class="active"><a href="javascript:;">首 页</a></li>
-                <li><a href="javascript:;">云游旅行</a></li>
-                <li><a href="javascript:;">云游E</a></li>
-                <li><a href="javascript:;">云游支付</a></li>
-                <li><a href="javascript:;">关于云游</a></li>
+    <div class="nav">
+        <div class="subnav">
+            <img src="img/logo.png">
+            <ul>
+                <a href="#giant_screen"><li class="on">首页</li></a>
+                <a href="#company_profile"><li>公司简介</li></a>
+                <a href="#who_we_are"><li>我们是谁</li></a>
+                <a href="#business_memorabilia"><li>企业大事记</li></a>
+                <a href="#partners"><li>合作伙伴</li></a>
+                <a href="#cooperative_travel_agency"><li>合作旅行社</li></a>
+                <a href="#corporate_vision"><li>企业愿景</li></a>
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item"><img src="image/banner/banner1.jpg"></div>
-                <div class="item"><img src="image/banner/banner2.jpg"></div>
-                <div class="item"><img src="image/banner/banner3.jpg"></div>
+    <ul class="right_bar">
+        <li class="totop"></li>
+        <li class="phone">
+            <div class="connect">
+                <div class="subconnect">
+                    <p>联系我们</p>
+                    <p>400-0000-0000</p>
+                </div>
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="icon-ls">&lsaquo;</span></a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="icon-ls">&rsaquo;</span></a>
-        </div>
-    </div>
-    <div class="main">
-    	<div class="InternetTravelFinance">
-			<h1>互联网+旅游+金融</h1>
-			<p>Internet plus travel + Finance</p>
-			<div class="imggroup">
-				<img src="image/icon_internet.png"/>
-				<img src="image/icon_aircraft.png" class="center"/>
-				<img src="image/icon_money.png"/>
-			</div>
-			<div class="contentAll">
-				<div class="content">
-					<h2>互联网</h2>
-					<p>云游有百人技术团队，丰富的开发经验。提供强大的技术支持。</p>
-				</div>
-				<div class="content">
-					<h2>旅游</h2>
-					<p>公司领导均有十年以上行业经验，为境外旅游行业痛点打造领队游客专属APP。</p>
-				</div>
-				<div class="content">
-					<h2>金融</h2>
-					<p>云游与银联、工商银行总行达成战略合作伙伴，支付有保障！</p>
-				</div>
-			</div>
-    	</div>
-		<div class="GreatOriginality">
-			<h1>云游e领队版 ，独具匠心。</h1>
-			<p>Great Originality</p>
-		</div>
-		<div class="LeaderVersion">
-			<h1>领队专属APP，带团更有逼格</h1>
-			<p class="subttl">Leader version</p>
-			<div class="phone"><img src="image/phone.png"/></div>
-			<div class="text">
-				<span>领队收款二维码</span>
-				<p>云游做为中国工商银行总行、中国银联的合作伙伴。领队使用”云游e“出示收款二维码即可向游客收取餐费、自费项目费用，支付更便捷，更安全！</p>
-				<span>管理团员</span>
-				<p>云游e领队版集合了：”团队二维码、团员列表、发送通知、开始集合“等管理团员工具，让领队有专门的管理工具，带团更舒心！</p>
-				<span>实时资讯</span>
-				<p class="qian">云游e领队版提供了实时咨询、景点指南、收费指南等，更提供了沿途餐厅沿途卫生间等讯息。</p>
-				<span>消费统计</span>
-				<p class="qian">团队的线上交易金额由云游统计，打开APP即可查看消费总金额，一目了然！</p>
-			</div>
-		</div>
-		<div class="TailorMade">
-			<h1>云游e游客版 ，量身定制。</h1>
-			<p>Tailor Made</p>
-		</div>
-		<div class="TouristVersion">
-			<h1>云游e游客版，您境外出行的小助手</h1>
-			<p class="subttl">Tourist version</p>
-			<div class="phone"><img src="image/phone1.png"/></div>
-			<div class="text">
-				<span>量身定制</span>
-				<p class="qian">云游e会按你的行程信息，为您推荐沿途景点及购物点信息，游客可在线预订自己想要的商品，效率更高。</p>
-				<span>线上商城</span>
-				<p>云游与境外商户签约，游客可通过云游e线上商城浏览预订自己想要的商品，购物更便捷，更安全！</p>
-				<span>回国购</span>
-				<p>游客回国后也能在app继续购买商品，可选择直邮或领队帮你带回，保证货正价实！</p>
-				<span>退税进度查询</span>
-				<p class="qian">云游e现支持退税进度查询，后续还会支持在线退税，敬请期待~</p>
-			</div>
-		</div>
-		<div class="AboutUs">
-			<div class="about">
-				<div class="word">
-					<h4>关于云游 <span>About Us</span></h4>
-					<p>云游智行（北京）科技有限公司是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。</p>
-					<a href="#">MORE>></a>
-				</div>
-				<div class="MV">
-                    <div class="video">
-                        <video id="video" src="media/yunu.mp4" controls="controls" muted></video>
-                        <div class="btn">
-                            <img src="image/icon/play.png" id="play">
-                        </div>
+        </li>
+        <li class="qq"></li>
+        <li class="wechat">
+            <div class="qrcode">
+                <div class="subqrcode">
+                    <div>
+                        <img src="img/er_1.png">
+                        <p>云游领队Club</p>
+                    </div>
+                    <div>
+                        <img src="img/er_2.png">
+                        <p>云游购</p>
                     </div>
                 </div>
-			</div>
-		</div>
-
-   		<div class="QR">
-	   		<div class="QR_code"></div>
-   		</div>
-        <div class="time-axis ">
-            <ul class="time-axis-tops clearFix">
-                <li><div class="time-axis-year">2015</div></li>
-                <li class="time-axis-tops2"><div class="time-axis-year">2016</div></li>
-                <li class="time-axis-tops3"><div class="time-axis-year">2017</div></li>
-            </ul>
-            <ul class="time-axis-top clearFix">
-                <li class="active"><div class="time-axis-date timeAxisDate">7月</div></li>
-                <li><div class="time-axis-date timeAxisDate">10月</div></li>
-                <li><div class="time-axis-date timeAxisDate">4月</div></li>
-                <li><div class="time-axis-date timeAxisDate">6月</div></li>
-                <li><div class="time-axis-date timeAxisDate">11月</div></li>
-                <li><div class="time-axis-date timeAxisDate">12月</div></li>
-                <li><div class="time-axis-date timeAxisDate">2月</div></li>
-                <li><div class="time-axis-date timeAxisDate">3月</div></li>
-                <li><div class="time-axis-date timeAxisDate">7月</div></li>
-            </ul>
-            <div class="time-axis-body">
-                <ul class="time-axis-bodys timeAxisBody">
-                    <li class="active">
-                        <div class="time-axis-word">云游智行（北京）科技有限公司前身沈阳云游网络科技有限公司在沈阳成立</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">公司自主研发的《电子合同签署管理系统》上线</div>
-                        <div class="time-axis-word">公司自主研发的《云游网络在线支付系统》上线</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">与辽宁省工商银行签署战略合作协议，成为工行入围企业</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">与辽宁省银联签署合作协议，开展跨境、境外在线支付业务</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">在北京成立总公司云游智行（北京）科技有限公司</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">公司自主研发的《云游e境外旅游综合信息服务系统》1.0版本上线</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">云游e境外旅游综合信息服务系统》升级为2.0版本</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">冠名并应邀参加云游·2017年欧洲旅游业联合总会年会</div>
-                    </li>
-                    <li>
-                        <div class="time-axis-word">云游e境外旅游综合信息服务系统》升级为3.0版本</div>
-                    </li>
+            </div>
+        </li>
+        <li class="tobottom"></li>
+    </ul>
+    <div id="giant_screen">
+        <img src="img/txt.png" class="txt">
+        <img src="img/next.png" class="next">
+    </div>
+    <div id="company_profile">
+        <div class="main">
+            <h1>Company Profile</h1>
+            <div class="blueline"></div>
+            <h2>公司简介</h2>
+            <div class="video">
+                <img src="img/video.jpg" class="cover">
+                <img src="img/play.png" class="play">
+                <video src="media/yunu.mp4" controls></video>
+            </div>
+            <p class="context"><strong>云游智行（北京）科技有限公司</strong>是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。</p>
+        </div>
+        <div class="number">
+            <div class="Statistics">
+                <div>
+                    <p class="num">5000+</p>
+                    <p class="type">优质游客</p>
+                </div>
+                <div class="middle">
+                    <p class="num">800+</p>
+                    <p class="type">注册导游</p>
+                </div>
+                <div>
+                    <p class="num">50+</p>
+                    <p class="type">覆盖国家</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="who_we_are">
+        <div class="main">
+            <h1>Who we are ?</h1>
+            <div class="blueline"></div>
+            <h2>我们是谁 ?</h2>
+            <div class="content">
+                <div class="fixed">
+                    <img src="img/vpn.png">
+                    <p class="type">VPN</p>
+                </div>
+                <div class="marginleft">
+                    <img src="img/app.png">
+                    <p class="type">手机APP</p>
+                </div>
+                <div class="marginleft">
+                    <img src="img/OFP.png">
+                    <p class="type">境外金融支付</p>
+                </div>
+                <div class="marginleft">
+                    <img src="img/mall.png">
+                    <p class="type">境外商城</p>
+                </div>
+            </div>
+            <p class="context">云游智行（北京）科技有限公司是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。</p>
+        </div>
+    </div>
+    <div id="business_memorabilia">
+        <div class="main">
+            <h1>Business memorabilia</h1>
+            <div class="blueline"></div>
+            <h2>企业大事记</h2>
+            <div class="time_axis">
+                <div class="pure_text timeblock1">
+                    <h3>2017.01</h3>
+                    <div class="txt">内容内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容</div>
+                </div>
+                <div class="mix_text timeblock2">
+                    <h3>2017.02</h3>
+                    <img src="img/photo1.jpg">
+                    <p class="word">内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                </div>
+                <div class="pure_text timeblock3">
+                    <h3>2017.03</h3>
+                    <div class="txt">内容内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容</div>
+                </div>
+                <div class="pure_text timeblock4">
+                    <h3>2017.04</h3>
+                    <div class="txt">内容内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容</div>
+                </div>
+                <div class="mix_text timeblock5">
+                    <h3>2017.05</h3>
+                    <img src="img/photo1.jpg">
+                    <img src="img/photo2.jpg">
+                    <p class="word">内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                </div>
+                <div class="pure_text timeblock6">
+                    <h3>2017.06</h3>
+                    <div class="txt">内容内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容</div>
+                </div>
+                <div class="pure_text timeblock7">
+                    <h3>2017.07</h3>
+                    <div class="txt">内容内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="partners">
+        <div class="main">
+            <h1>Partners</h1>
+            <div class="blueline"></div>
+            <h2>合作伙伴</h2>
+            <div class="content">
+                <div class="blockleft">
+                    <img src="img/UnionPay.png">
+                    <p>云游智行（北京）科技有限公司是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。
+                    </p>
+                </div>
+                <div class="blockright">
+                    <img src="img/ICBC.png">
+                    <p>云游智行（北京）科技有限公司是专业从事互联网+旅游+金融的平台软件科技公司，依托中国工商银行、中国银联的金融端支撑及中国众多出境旅行社的协同发展，通过手机软件平台为旅行社、领队、参团游客、境外商户等主体构建更为完善的互联网应用场景服务，致力于为数千万中国组团出境游客人提供更为便捷的境外消费体验。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cooperative_travel_agency">
+        <div class="main">
+            <h1>Cooperative travel agency</h1>
+            <div class="blueline"></div>
+            <h2>合作旅行社</h2>
+            <p>(排名不分先后)</p>
+            <div class="content">
+                <ul class="inlineBlock index-travel">
+                    <li><img src="img/travel_pic_1.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_2.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_3.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_4.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_5.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_6.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_7.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_8.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_9.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_10.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_11.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_12.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_13.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_14.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_15.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_16.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_17.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_18.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_19.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_20.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_21.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_22.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_23.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_24.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_25.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_26.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_27.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_28.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_29.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_30.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_31.png" alt="旅行社" title="旅行社"></li>
+                </ul>
+                <ul class="inlineBlock index-travel">
+                    <li><img src="img/travel_pic_8.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_9.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_32.png" alt="旅行社" title="旅行社"></li>
+                    <li><img src="img/travel_pic_33.png" alt="旅行社" title="旅行社"></li>
                 </ul>
             </div>
         </div>
     </div>
-    
-    
-    
-    <div class="footer">
-        <div class="footer-body">
-            <div class="footer-tit">云游智行</div>
-            <ul class="footer-list">
-                <li><a href="javascript:;">关于公司</a></li>
-                <li><a href="javascript:;">服务咨询</a></li>
-                <li><a href="javascript:;">新闻中心</a></li>
-                <li><a href="javascript:;">联系我们</a></li>
-            </ul>
-            <div class="copyright">copyright © 2017 云游智行</div>
-        </div>
+    <div class="index-footer">
+        <h1>云游智行</h1>
+        <div class="blueline"></div>
+        <ul class="inlineBlock index-footer-list">
+            <li>
+                <div>关于我们</div>
+                <div class="footer-list-en">About us</div>
+            </li>
+            <li>
+                <div>服务咨询</div>
+                <div class="footer-list-en">Service consultation</div>
+            </li>
+            <li>
+                <div>新闻中心</div>
+                <div class="footer-list-en">News center</div>
+            </li>
+            <li>
+                <div>联系我们</div>
+                <div class="footer-list-en">Contact us</div>
+            </li>
+        </ul>
+        <ul class="inlineBlock index-footer-address">
+            <li>
+                <h5 class="address-w">云游智行（北京）总公司</h5>
+                <div>（010）5957 6428</div>
+                <div>hum@yunupay.com</div>
+                <div>北京市东城区东二环银河SOHOA座11203室</div>
+            </li>
+            <li>
+                <h5 class="address-w">云游智行（沈阳）分公司</h5>
+                <div>（024）2387 2988</div>
+                <div>hum@yunupay.com</div>
+                <div>沈阳市沈河区中山路200号辽宁广告公司6楼</div>
+            </li>
+            <li>
+                <h5 class="address-w">云游智行（上海）分公司</h5>
+                <div>（021）6877 3778</div>
+                <div>hum@yunupay.com</div>
+                <div>上海市浦东新区东方路818号众城大厦16楼E座</div>
+            </li>
+        </ul>
+        <ul class="inlineBlock index-footer-er">
+            <li>
+                <img src="img/er_1.png" alt="云游领队Club" title="云游领队Club">
+                <h5>【云游领队Club】<br><span>微信公众号</span></h5>
+            </li>
+            <li>
+                <img src="img/er_2.png" alt="云游购" title="云游购">
+                <h5>【云游购】<br><span>微信公众号</span></h5>
+            </li>
+        </ul>
     </div>
-</div>
+
 </body>
 </html>
-
-<script>
-    $(function(){
-        $(".menu > li").click(function(){
-            $(".menu > li").removeClass("active");
-            $(this).addClass("active");
-        });
-        $("#play").click(function(){
-            $(this).parent().fadeOut(600);
-            $("#video").trigger("play");
-        });
-        $(".timeAxisDate").click(function(){
-            var num=$(this).parents("li").index();
-            $(".timeAxisDate").parents("li").removeClass("active");
-            $(this).parents("li").addClass("active");
-            $(".timeAxisBody li").hide();
-            $(".timeAxisBody li:eq("+num+")").fadeIn(800);
-        });
-    })
-</script>
